@@ -1,0 +1,978 @@
+.STATE-POST {
+    background-color: #fafaf8;
+    width: 100%;
+    min-width: 1728px;
+    min-height: 2851px;
+    display: flex;
+    flex-direction: column;
+    gap: 16.1px;
+  }
+  
+  .STATE-POST .header {
+    display: flex;
+    width: 1728px;
+    height: 135.09px;
+    position: relative;
+    margin-top: 32.3px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80.65px;
+    background-color: transparent;
+  }
+  
+  .STATE-POST .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 31.7px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .calculator-column {
+    display: flex;
+    margin-left: 201.6px;
+    width: 1324.8px;
+    height: 2636.64px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29.12px;
+  }
+  
+  .STATE-POST .section-card {
+    width: 1310.25px;
+    padding: 43.68px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29.12px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 21.84px;
+    border: 1.82px solid;
+    border-color: #d8dae0;
+    box-shadow: 0px 7.28px 21.84px #00000008;
+  }
+  
+  .STATE-POST .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.82px;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 25.9px;
+    letter-spacing: 0.13px;
+    line-height: normal;
+  }
+  
+  .STATE-POST .card-content {
+    flex-direction: column;
+    gap: 21.84px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .div-2 {
+    gap: 29.12px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .STATE-POST .text-wrapper-2 {
+    width: fit-content;
+    margin-top: -1.82px;
+    font-size: 23px;
+    position: relative;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .input-container {
+    display: flex;
+    height: 48.81px;
+    align-items: center;
+    gap: 14.56px;
+    padding: 0px 21.84px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+    border-color: #d8dae0;
+  }
+  
+  .STATE-POST .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--colors-labels-vibrant-controls-primary);
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .chevron-down {
+    position: relative;
+    width: 25.48px;
+    height: 25.48px;
+  }
+  
+  .STATE-POST .chevron-down-2 {
+    height: 25.39px;
+    background-image: url(./img/calendar-icon.svg);
+    background-size: 100% 100%;
+    position: relative;
+    width: 25.48px;
+  }
+  
+  .STATE-POST .worker-input-row {
+    height: 43.38px;
+    gap: 5.42px;
+    align-self: stretch;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .STATE-POST .input-container-2 {
+    display: flex;
+    width: 171.73px;
+    height: 48.81px;
+    align-items: center;
+    gap: 14.56px;
+    padding: 0px 21.84px;
+    margin-top: -2.71px;
+    margin-bottom: -2.71px;
+    background-color: #ffffff;
+    border-color: #d8dae0;
+    position: relative;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+  }
+  
+  .STATE-POST .text-wrapper-4 {
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .vector {
+    position: absolute;
+    width: 82.14%;
+    height: 69.64%;
+    top: 30.36%;
+    left: 17.86%;
+  }
+  
+  .STATE-POST .worker-name-input {
+    display: flex;
+    width: 419.74px;
+    height: 48.81px;
+    align-items: center;
+    padding: 0px 21.84px;
+    position: relative;
+    margin-top: -2.71px;
+    margin-bottom: -2.71px;
+    background-color: #ffffff;
+    border-radius: 6.78px;
+    border: 1.82px solid;
+    border-color: #d8dae0;
+  }
+  
+  .STATE-POST .calendar-icon {
+    position: relative;
+    width: 28.92px;
+    height: 28.92px;
+  }
+  
+  .STATE-POST .section-card-2 {
+    width: 1310.1px;
+    height: 437.91px;
+    padding: 43.68px 43.68px 43.84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29.12px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 21.84px;
+    border: 1.82px solid;
+    border-color: #d8dae0;
+    box-shadow: 0px 7.28px 21.84px #00000008;
+  }
+  
+  .STATE-POST .card-content-wrapper {
+    width: 1222.89px;
+    gap: 29.12px;
+    flex: 0 0 auto;
+    margin-bottom: -123.66px;
+    margin-right: -0.13px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .card-content-2 {
+    flex-direction: column;
+    width: 1222.89px;
+    gap: 21.84px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .row {
+    gap: 71.4px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .select-destination {
+    width: 350.84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .worker-input-row-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.81px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .input-container-3 {
+    display: flex;
+    height: 48.81px;
+    align-items: center;
+    gap: 14.56px;
+    padding: 0px 21.84px;
+    flex: 1;
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-color: #d8dae0;
+    position: relative;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+  }
+  
+  .STATE-POST .img {
+    width: 82.13%;
+    left: 17.87%;
+    position: absolute;
+    height: 69.64%;
+    top: 30.36%;
+  }
+  
+  .STATE-POST .select-destination-2 {
+    width: 348.83px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .vector-2 {
+    width: 82.15%;
+    left: 17.85%;
+    position: absolute;
+    height: 69.64%;
+    top: 30.36%;
+  }
+  
+  .STATE-POST .select-destination-3 {
+    width: 314.55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .input-container-wrapper {
+    width: 375.09px;
+    gap: 1.81px;
+    flex: 0 0 auto;
+    margin-right: -60.54px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .STATE-POST .empty-col {
+    margin-right: -6.54px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 1px;
+    opacity: 0;
+  }
+  
+  .STATE-POST .div-wrapper {
+    gap: 5.42px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .STATE-POST .text-wrapper-5 {
+    position: absolute;
+    top: 13px;
+    left: 271px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-6 {
+    top: 12px;
+    left: 23px;
+    position: absolute;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-7 {
+    position: absolute;
+    top: 13px;
+    left: 295px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-8 {
+    top: 52px;
+    left: 439px;
+    position: absolute;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .select-service-type {
+    width: 1237.35px;
+    margin-right: -14.46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .option-checkboxes {
+    position: relative;
+    width: 843.28px;
+    height: 103.04px;
+  }
+  
+  .STATE-POST .cb-box {
+    position: absolute;
+    top: 7px;
+    left: 22px;
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    border-radius: 3.62px;
+    border: 1.81px solid;
+    border-color: #9ea3ad;
+  }
+  
+  .STATE-POST .text-wrapper-9 {
+    position: absolute;
+    top: 5px;
+    left: 52px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .cb-box-2 {
+    top: 7px;
+    left: 356px;
+    background-color: #3b6fe8;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 3.62px;
+    border: 1.81px solid;
+    border-color: #9ea3ad;
+  }
+  
+  .STATE-POST .text-wrapper-10 {
+    position: absolute;
+    top: 5px;
+    left: 224px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .cb-box-3 {
+    top: 8px;
+    left: 718px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 3.62px;
+    border: 1.81px solid;
+    border-color: #9ea3ad;
+  }
+  
+  .STATE-POST .text-wrapper-11 {
+    position: absolute;
+    top: 4px;
+    left: 386px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-12 {
+    position: absolute;
+    top: 4px;
+    left: 559px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-13 {
+    position: absolute;
+    top: 5px;
+    left: 760px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .cb-box-4 {
+    top: 7px;
+    left: 194px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 3.62px;
+    border: 1.81px solid;
+    border-color: #9ea3ad;
+  }
+  
+  .STATE-POST .cb-box-5 {
+    top: 5px;
+    left: 530px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 3.62px;
+    border: 1.81px solid;
+    border-color: #9ea3ad;
+  }
+  
+  .STATE-POST .empty-col-2 {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 1px;
+    margin-right: -44.58px;
+    opacity: 0;
+  }
+  
+  .STATE-POST .frame {
+    width: 1222.89px;
+    gap: 29.12px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .select-service-type-2 {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 28.02px;
+  }
+  
+  .STATE-POST .section-card-3 {
+    display: flex;
+    flex-direction: column;
+    width: 1310.1px;
+    align-items: flex-start;
+    gap: 29.12px;
+    padding: 43.68px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 21.84px;
+    border: 1.82px solid;
+    border-color: #d8dae0;
+    box-shadow: 0px 7.28px 21.84px #00000008;
+  }
+  
+  .STATE-POST .card-content-3 {
+    display: flex;
+    width: 1222.89px;
+    align-items: flex-start;
+    gap: 29.12px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: -0.13px;
+  }
+  
+  .STATE-POST .card-content-4 {
+    flex-direction: column;
+    width: 1222.89px;
+    height: 306.85px;
+    gap: 21.84px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .select-destination-4 {
+    display: flex;
+    flex-direction: column;
+    width: 596.98px;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .input-container-4 {
+    display: flex;
+    width: 297.36px;
+    align-items: center;
+    gap: 14.56px;
+    padding: 0px 21.84px;
+    background-color: #ffffff;
+    border-color: #d8dae0;
+    position: relative;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+  }
+  
+  .STATE-POST .text-wrapper-14 {
+    position: relative;
+    flex: 1;
+    margin-top: -1.08px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--appearance-labels-vibrant-use-plus-lighter-darker-primary);
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .input-container-5 {
+    display: flex;
+    width: 297.36px;
+    height: 48.81px;
+    align-items: center;
+    gap: 14.56px;
+    padding: 0px 21.84px;
+    background-color: #ffffff;
+    border-color: #d8dae0;
+    position: relative;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+  }
+  
+  .STATE-POST .select-destination-5 {
+    width: 596.98px;
+    margin-right: -0.19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10.92px;
+    position: relative;
+  }
+  
+  .STATE-POST .text-wrapper-15 {
+    position: absolute;
+    top: 13px;
+    left: 23px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-16 {
+    position: absolute;
+    top: 13px;
+    left: 295px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--appearance-labels-vibrant-use-plus-lighter-darker-primary);
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-17 {
+    top: 13px;
+    left: 21px;
+    position: absolute;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .row-2 {
+    gap: 29.12px;
+    margin-bottom: -36.92px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .input-container-6 {
+    align-self: stretch;
+    width: 100%;
+    height: 48.81px;
+    background-color: #fffbdd;
+    border-color: #fff0a0;
+    position: relative;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.82px solid;
+  }
+  
+  .STATE-POST .text-wrapper-18 {
+    position: absolute;
+    top: 13px;
+    left: 327px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-19 {
+    position: absolute;
+    top: 12px;
+    left: 21px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .field-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 21.84px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .text {
+    font-family: "Archivo-Regular", Helvetica;
+    color: #6b7280;
+    font-size: 23.7px;
+    white-space: nowrap;
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .empty-col-3 {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 1px;
+    opacity: 0;
+  }
+  
+  .STATE-POST .select-service-type-wrapper {
+    width: 1222.89px;
+    gap: 29.12px;
+    flex: 0 0 auto;
+    margin-bottom: -86.78px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .STATE-POST .white-paper {
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--appearance-labels-vibrant-use-plus-lighter-darker-primary);
+    font-size: 20.2px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .total-cost-summary {
+    display: flex;
+    flex-direction: column;
+    width: 1324.8px;
+    height: 214.56px;
+    align-items: flex-start;
+    padding: 0px 0px 54.72px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 21.83px;
+    overflow: hidden;
+    border: 1.81px solid;
+    border-color: #d8dae0;
+  }
+  
+  .STATE-POST .summary-header {
+    display: flex;
+    width: 1324.8px;
+    height: 63.36px;
+    align-items: center;
+    padding: 17.28px 43.2px;
+    position: relative;
+    background-color: #4078f1;
+  }
+  
+  .STATE-POST .text-wrapper-20 {
+    position: relative;
+    width: fit-content;
+    margin-top: -2.04px;
+    font-family: "DM Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .summary-content {
+    display: flex;
+    flex-direction: column;
+    width: 1324.8px;
+    align-items: flex-start;
+    gap: 23.04px;
+    padding: 34.56px 43.2px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -49.32px;
+  }
+  
+  .STATE-POST .summary-boxes {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 23.04px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .total-box {
+    display: flex;
+    width: 604.8px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 11.52px;
+    padding: 14.4px 21.6px;
+    position: relative;
+    background-color: #edfaf3;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.44px solid;
+    border-color: #88e4aa;
+  }
+  
+  .STATE-POST .label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.88px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .text-wrapper-21 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.44px;
+    font-family: "Noto Sans KR-Regular", Helvetica;
+    font-weight: 400;
+    color: #666666;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .STATE-POST .text-wrapper-22 {
+    position: relative;
+    width: fit-content;
+    font-family: "Noto Sans KR-Bold", Helvetica;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 21.6px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .STATE-POST .unit-cost-box {
+    display: flex;
+    width: 604.8px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 11.52px;
+    padding: 14.4px 21.6px;
+    position: relative;
+    background-color: #fffbdd;
+    border-radius: 6.78px;
+    overflow: hidden;
+    border: 1.44px solid;
+    border-color: #fff0a0;
+  }
+  
+  .STATE-POST .action-buttons {
+    display: flex;
+    width: 1324.8px;
+    align-items: flex-start;
+    gap: 17.28px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .STATE-POST .div-wrapper-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.64px;
+    padding: 14.4px 23.04px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 11.52px;
+    overflow: hidden;
+    border: 1.81px solid;
+    border-color: #4078f1;
+  }
+  
+  .STATE-POST .text-wrapper-23 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.81px;
+    font-family: "Noto Sans KR-Bold", Helvetica;
+    font-weight: 700;
+    color: #4078f1;
+    font-size: 20.2px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  

@@ -3,110 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <title>Print Production Cost Calculator</title>
+
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-3.css">
+  <link rel="stylesheet" href="style-4.css">
  
-  <!--
-    Supabase JS client, loaded from CDN.
-    This avoids needing @supabase/supabase-js in package.json / npm install,
-    which is the simplest path inside a StackBlitz static-site preview.
-    It attaches itself to the global `window.supabase` object.
-  -->
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-</head>
-<body>
-  <div id="calculator-container">
-    <h1>Print Production Cost Calculator</h1>
+  <body>
+    <div class="STATE-INITIAL">
+      
+      <header class="header">
+        <div class="text-wrapper">Print Production Cost Calculator</div>
+      </header>
+  
+      <main id="calculator-container" class="calculator-column">
  
-    <section>
-      <h3>1. Base Project Volume</h3>
-      <label>Book Size:</label>
-      <select id="select-size"><option>Loading...</option></select>
+        <section class="section-card">
+          <h3 class="div">Base Project Volume</h3>
+          <div class="card-content">
+            
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Book Size:</label>
+                <div class="input-container">
+                  <select id="select-size" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Standard paper Size:</label>
+                <div class="input-container">
+                  <select id="select-paper-size" class="text-wrapper-3">
+                    <option value="국전">국전 (A-Series Standard)</option>
+                    <option value="전지">전지 (B-Series Standard)</option>
+                    <option value="880×625">880×625</option>
+                    <option value="2절">2절 (Half Sheet)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+  
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Page Yield:</label>
+                <div class="input-container">
+                  <select id="input-page-yield" class="text-wrapper-3">
+                    <option value="4">4 pages (4도)</option>
+                    <option value="8">8 pages (8도)</option>
+                    <option value="16" selected>16 pages (16도)</option>
+                    <option value="32">32 pages (32도)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Print Quantity:</label>
+                <div class="input-container">
+                  <input type="number" id="input-quantity" class="text-wrapper-3" value="1000" min="1" />
+                </div>
+              </div>
+            </div>
+  
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Total Inner Pages:</label>
+                <div class="input-container">
+                  <input type="number" id="input-pages" class="text-wrapper-3" value="16" min="2" />
+                </div>
+              </div>
+              <div class="empty-col"></div> </div>
+  
+          </div>
+        </section>
+  
+        <section class="section-card">
+          <h3 class="div">Paper Stock</h3>
+          <div class="card-content">
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Paper Type & Weight:</label>
+                <div class="input-container">
+                  <select id="select-paper" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section-card">
+          <h3 class="div">Plates and Press Setup</h3>
+          <div class="card-content">
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Color Profile:</label>
+                <div class="input-container">
+                  <select id="select-color-count" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Plate Type:</label>
+                <div class="input-container">
+                  <select id="select-plate-type" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section-card">
+          <h3 class="div">Post Production Finishes</h3>
+          <div class="card-content">
+            
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Binding Method:</label>
+                <div class="input-container">
+                  <select id="select-binding" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+                <label id="label-binding-price" class="text-wrapper-2" style="display:none; margin-top:10px;">
+                  Binding Price (manual entry, per copy, KRW):
+                </label>
+                <div class="input-container" id="input-binding-price-container" style="display:none;">
+                  <input type="number" id="input-binding-price" class="text-wrapper-3" value="0" min="0" />
+                </div>
+                <p id="note-perfect-binding" style="font-size: 12px; color: #888; display:none; margin-top:5px;">
+                  Note: no pricing table exists yet for Perfect Binding (무선제본). Cost is currently 0 until one is added.
+                </p>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Binding Style:</label>
+                <div class="input-container">
+                  <select id="select-binding-style" class="text-wrapper-3"><option>Loading...</option></select>
+                </div>
+              </div>
+            </div>
+  
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Coating:</label>
+                <div class="input-container">
+                  <select id="select-coating" class="text-wrapper-3"><option value="">None</option></select>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Epoxy:</label>
+                <div class="input-container">
+                  <select id="select-epoxy" class="text-wrapper-3"><option value="">None</option></select>
+                </div>
+              </div>
+            </div>
+  
+            <div class="div-2">
+              <div class="div-3">
+                <label class="text-wrapper-2">Grounding:</label>
+                <div class="input-container">
+                  <select id="select-grounding" class="text-wrapper-3"><option value="">None</option></select>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="text-wrapper-2">Die-Cutting:</label>
+                <div class="input-container">
+                  <select id="select-diecutting" class="text-wrapper-3">
+                    <option value="false">No Die-Cutting</option>
+                    <option value="true">Apply Die-Cutting</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </section>
  
-      <label>Paper Standard Size:</label>
-      <select id="select-paper-size">
-        <option value="국전">국전 (A-Series Standard)</option>
-        <option value="전지">전지 (B-Series Standard)</option>
-        <option value="880×625">880×625</option>
-        <option value="2절">2절 (Half Sheet)</option>
-      </select>
- 
-      <label for="input-page-yield">Page Yield (Pages per Sheet):</label>
-      <select id="input-page-yield">
-        <option value="4">4 pages (4도)</option>
-        <option value="8">8 pages (8도)</option>
-        <option value="16" selected>16 pages (16도)</option>
-        <option value="32">32 pages (32도)</option>
-      </select>
- 
-      <label>Print Quantity (Copies):</label>
-      <input type="number" id="input-quantity" value="1000" min="1" />
- 
-      <label>Total Inner Pages:</label>
-      <input type="number" id="input-pages" value="16" min="2" />
-    </section>
- 
-    <section>
-      <h3>2. Paper Stock</h3>
-      <label>Paper Type & Weight:</label>
-      <select id="select-paper"><option>Loading...</option></select>
-    </section>
- 
-    <section>
-      <h3>3. Plates and Press Setup</h3>
-      <label>Color Profile (Front/Back Colors):</label>
-      <select id="select-color-count"><option>Loading...</option></select>
- 
-      <label>Plate / Film Type:</label>
-      <select id="select-plate-type"><option>Loading...</option></select>
-    </section>
- 
-    <section>
-      <h3>4. Binding & Post-Press Finishes </h3>
-      <label>Binding Method:</label>
-      <select id="select-binding"><option>Loading...</option></select>
- 
-      <label id="label-binding-price" style="display:none;">
-        Binding Price (manual entry, per copy, KRW):
-      </label>
-      <input type="number" id="input-binding-price" value="0" min="0" style="display:none;" />
-      <p id="note-perfect-binding" style="font-size: 12px; color: #888; display:none;">
-        Note: no pricing table exists yet for Perfect Binding (무선제본). Cost is currently 0 until one is added.
-      </p>
- 
-      <label>Binding Direction/Style:</label>
-      <select id="select-binding-style"><option>Loading...</option></select>
- 
-      <label>Lamination/Coating:</label>
-      <select id="select-coating"><option value="">None</option></select>
- 
-      <label>Spot UV/ Epoxy Size:</label>
-      <select id="select-epoxy"><option value="">None</option></select>
- 
-      <label>Folding Method (Grounding):</label>
-      <select id="select-grounding"><option value="">None</option></select>
- 
-      <label>Die-Cutting:</label>
-      <select id="select-diecutting">
-        <option value="false">No Die-Cutting</option>
-        <option value="true">Apply Die-Cutting</option>
-      </select>
-    </section>
- 
-    <section style="margin-top: 30px; padding-top: 20px; border-top: 3px solid #111;">
-      <h2>Cost Breakdown Estimates</h2>
-      <p>Calculated Total Material Used: <strong><span id="output-reams">0.00</span> Reams (R)</strong></p>
-      <ul>
-        <li>Raw Paper Cost: <span id="cost-paper">0</span> KRW</li>
-        <li>CTP Plate Fees: <span id="cost-plates">0</span> KRW</li>
-        <li>Press Printing Run Fees: <span id="cost-printing">0</span> KRW</li>
-        <li>Post-Processing (Binding/Coating/Epoxy/Folding/DieCut): <span id="cost-finishing">0</span> KRW</li>
-      </ul>
-      <hr/>
-      <h2 style="color: #2b6cb0">Grand Total Cost: <span id="cost-total">0</span> KRW</h2>
-    </section>
- 
-    <p id="status-line" style="font-size: 12px; color: #888; margin-top: 20px;"></p>
-  </div>
- 
-  <script type="module" src="/src/main.js"></script>
-</body>
+        <section class="section-card" style="margin-bottom: 60px;">
+          <h2 class="div" style="color: #2b6cb0;">Cost Breakdown Estimates</h2>
+          <div class="card-content">
+            
+            <div class="field-wrapper">
+              <p class="text-wrapper-2">Calculated Total Material Used: <strong><span id="output-reams" style="color:#1a1a1a;">0.00</span> Reams (R)</strong></p>
+            </div>
+  
+            <div class="card-content-2" style="gap: 15px;">
+              <div class="div-2" style="justify-content: space-between; border-bottom: 1px dashed #d8dae0; padding-bottom: 8px;">
+                <span class="text-wrapper-2" style="color: #6b7280;">Raw Paper Cost:</span>
+                <span class="text-wrapper-2" style="font-weight: 700;"><span id="cost-paper">0</span> KRW</span>
+              </div>
+              <div class="div-2" style="justify-content: space-between; border-bottom: 1px dashed #d8dae0; padding-bottom: 8px;">
+                <span class="text-wrapper-2" style="color: #6b7280;">CTP Plate Fees:</span>
+                <span class="text-wrapper-2" style="font-weight: 700;"><span id="cost-plates">0</span> KRW</span>
+              </div>
+              <div class="div-2" style="justify-content: space-between; border-bottom: 1px dashed #d8dae0; padding-bottom: 8px;">
+                <span class="text-wrapper-2" style="color: #6b7280;">Press Printing Run Fees:</span>
+                <span class="text-wrapper-2" style="font-weight: 700;"><span id="cost-printing">0</span> KRW</span>
+              </div>
+              <div class="div-2" style="justify-content: space-between; border-bottom: 1px dashed #d8dae0; padding-bottom: 8px;">
+                <span class="text-wrapper-2" style="color: #6b7280;">Post-Processing:</span>
+                <span class="text-wrapper-2" style="font-weight: 700;"><span id="cost-finishing">0</span> KRW</span>
+              </div>
+            </div>
+  
+            <div class="div-2" style="margin-top: 15px; justify-content: space-between; background: #f4f7fe; padding: 20px; border-radius: 12px;">
+              <h2 class="div" style="color: #2b6cb0; margin: 0;">Grand Total Cost:</h2>
+              <h2 class="div" style="color: #3b6fe8; font-size: 32px; margin: 0;"><span id="cost-total">0</span> KRW</h2>
+            </div>
+  
+          </div>
+        </section>
+  
+        <p id="status-line" class="text-wrapper-2" style="font-size: 14px; color: #888; margin-bottom: 40px;"></p>
+      </main>
+    </div> <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
